@@ -193,7 +193,7 @@ int main(void)
     ifx_platform_log_msg(out_buf, 35);
 
     /* ========== Step 2: Sign with OPTIGA IAK ========== */
-    buf_size = sprintf((char*)out_buf, "[2] Signing with OPTIGA IAK...\r\n");
+    buf_size = sprintf((char*)out_buf, "\n[2] Signing with OPTIGA IAK...\r\n");
     ifx_platform_log_msg(out_buf, buf_size);
 
     status = psa_initial_attest_get_token(iat_nonce, sizeof(iat_nonce), attestation_token, sizeof(attestation_token), &token_size);
@@ -216,7 +216,7 @@ int main(void)
     ifx_platform_log_msg(out_buf, 35);
 
     /* ========== Step 3: Verify signature (Simplified demo) ========== */
-    buf_size = sprintf((char*)out_buf, "[3] Verifying signature...\r\n");
+    buf_size = sprintf((char*)out_buf, "\n[3] Verifying signature...\r\n");
     ifx_platform_log_msg(out_buf, buf_size);
 
     /* NOTE: For this demo, we show a simplified verification concept.

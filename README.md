@@ -2,7 +2,7 @@
 
 **Prove your device is genuine - Unforgeable hardware-rooted identity**
 
-> **Part 1 of 3** | [← Back to Tutorial Hub](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials) | [Part 2: Signing →](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)
+> **Part 1 of 3** | [← Back to Tutorial Hub](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials) | [Part 2: Signing →](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)
 
 [![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)]()
 [![Time](https://img.shields.io/badge/Time-30_minutes-blue)]()
@@ -19,7 +19,7 @@ A self-contained attestation demo that:
 
 **Time:** 30 minutes | **Level:** Beginner
 
-**Why attestation matters:** Proves your device is genuine and firmware hasn't been tampered. See [Why Hardware Security Matters](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials#why-hardware-security-matters) in the Tutorial Hub for attack scenarios and security comparison.
+**Why attestation matters:** Proves your device is genuine and firmware hasn't been tampered. See [Why Hardware Security Matters](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials#why-hardware-security-matters) in the Tutorial Hub for attack scenarios and security comparison.
 
 ---
 
@@ -55,7 +55,7 @@ A self-contained attestation demo that:
 - BOOT SW: **OFF**
 - J20, J21: **NC** (not connected)
 
-See [Hardware Setup Guide](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials#prerequisites) in Tutorial Hub for photos.
+See [Hardware Setup Guide](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials#prerequisites) in Tutorial Hub for photos.
 
 ---
 
@@ -63,7 +63,7 @@ See [Hardware Setup Guide](https://github.com/TESA-Workshops/optiga-tfm-connecti
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/TESA-Workshops/psoc-edge-optiga-01-attestation
+git clone https://github.com/nitikorn20/psoc-edge-optiga-01-attestation
 cd psoc-edge-optiga-01-attestation
 
 # 2. Build all projects
@@ -245,7 +245,7 @@ Token format: PSA-2.0.0-token
 
 ### Option 2: Continue to Part 2
 
-📘 **[Part 2: Digital Signatures](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)**
+📘 **[Part 2: Digital Signatures](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)**
 
 Learn complete sign/verify cycle with OPTIGA device keys.
 
@@ -304,7 +304,7 @@ This tutorial is based on **Infineon CE240591** with these enhancements:
 ## Learn More
 
 ### Next Tutorial
-📚 **[Part 2: Digital Signatures](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)** - ECDSA signing with hardware-protected keys
+📚 **[Part 2: Digital Signatures](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)** - ECDSA signing with hardware-protected keys
 
 ### Documentation
 
@@ -326,12 +326,12 @@ This tutorial is based on **Infineon CE240591** with these enhancements:
 **✅ Completed Part 1!** You now understand hardware-rooted device identity.
 
 **Continue learning:**
-- [**Part 2: Digital Signatures →**](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing) - Sign data with OPTIGA keys (45 min)
-- [**Part 3: Secure Channel →**](https://github.com/TESA-Workshops/psoc-edge-optiga-03-secure-channel) - End-to-end encryption (90 min)
+- [**Part 2: Digital Signatures →**](https://github.com/nitikorn20/psoc-edge-optiga-02-signing) - Sign data with OPTIGA keys (45 min)
+- [**Part 3: Secure Channel →**](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel) - End-to-end encryption (90 min)
 
 **Explore more:**
-- [**Tutorial Series Hub**](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials)
-- [**Why OPTIGA is Essential**](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials/blob/main/docs/why-optiga-trust-m.md) - Deep dive article
+- [**Tutorial Series Hub**](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials)
+- [**Why OPTIGA is Essential**](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials/blob/main/docs/why-optiga-trust-m.md) - Deep dive article
 
 ---
 
@@ -350,7 +350,7 @@ Licensed under Apache 2.0. See [LICENSE](LICENSE) file.
 
 Found a bug or have suggestions?
 
-- **Report Issues:** [Tutorial Repository Issues](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials/issues)
+- **Report Issues:** [Tutorial Repository Issues](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials/issues)
 - **Original Example:** [Infineon CE240591 Issues](https://github.com/Infineon/mtb-example-psoc-edge-epc2-tfm-attestation/issues)
 
 ---
@@ -359,6 +359,6 @@ Found a bug or have suggestions?
 
 **🔒 Hardware-rooted device identity that cannot be cloned**
 
-**[Tutorial Series →](https://github.com/TESA-Workshops/optiga-tfm-connectivity-tutorials)** | **[Next: Digital Signatures →](https://github.com/TESA-Workshops/psoc-edge-optiga-02-signing)**
+**[Tutorial Series →](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials)** | **[Next: Digital Signatures →](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)**
 
 </div>
