@@ -2,7 +2,7 @@
 
 **Prove your device is genuine - Unforgeable hardware-rooted identity**
 
-> **Part 1 of 3** | [← Back to Tutorial Hub](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials) | [Part 2: Signing →](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)
+> **Part 1 of 3** | [← Back to Tutorial Hub](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials) | [Part 2: Signing →](https://github.com/nitikorn20/02-signing)
 
 [![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)]()
 [![Time](https://img.shields.io/badge/Time-30_minutes-blue)]()
@@ -59,21 +59,9 @@ See [Hardware Setup Guide](https://github.com/nitikorn20/optiga-tfm-connectivity
 
 ---
 
-### Build and Run
+### Build and Program (VS Code)
 
-```bash
-# 1. Clone this repository
-git clone https://github.com/nitikorn20/psoc-edge-optiga-01-attestation
-cd psoc-edge-optiga-01-attestation
-
-# 2. Build all projects
-make -j8
-
-# 3. Flash to device
-make program
-
-# 4. Open serial terminal (115200 baud, 8N1)
-```
+See [docs/build.md](docs/build.md) for the standard VS Code workflow used by this project. After programming, open a serial terminal (115200 baud, 8N1).
 
 ---
 
@@ -194,7 +182,7 @@ psa_initial_attest_get_token(
 ## Project Structure
 
 ```
-psoc-edge-optiga-01-attestation/
+01-attestation/
 ├── proj_bootloader/       # Edge Protect Bootloader (measures firmware)
 ├── proj_cm33_s/           # TF-M (Secure firmware with attestation service)
 ├── proj_cm33_ns/          # Application (Non-Secure)
@@ -245,7 +233,7 @@ Token format: PSA-2.0.0-token
 
 ### Option 2: Continue to Part 2
 
-📘 **[Part 2: Digital Signatures](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)**
+📘 **[Part 2: Digital Signatures](https://github.com/nitikorn20/02-signing)**
 
 Learn complete sign/verify cycle with OPTIGA device keys.
 
@@ -276,9 +264,7 @@ Learn complete sign/verify cycle with OPTIGA device keys.
 <summary><strong>Build fails: "psa/initial_attestation.h not found"</strong></summary>
 
 **Solution:**
-```bash
-make getlibs  # Ensure TF-M library is downloaded
-```
+- Use ModusToolbox **Get Libraries** (or re-run **Add Bootloader**) to download TF-M dependencies.
 
 </details>
 
@@ -290,8 +276,8 @@ make getlibs  # Ensure TF-M library is downloaded
 **Workaround:**
 1. Temporarily comment this line in `common.mk`:
    `COMBINE_SIGN_JSON?=./bsps/TARGET_$(TARGET)/config/GeneratedSource/boot_with_bldr.json`
-2. Run `make -j8` to let the system generate `GeneratedSource`
-3. Uncomment the line, then run `make program`
+2. Run **Build** in ModusToolbox to let the system generate `GeneratedSource`
+3. Uncomment the line, then run **Program**
 
 </details>
 
@@ -310,14 +296,12 @@ This tutorial is based on **Infineon CE240591** with these enhancements:
 
 **Original Infineon example:** [mtb-example-psoc-edge-epc2-tfm-attestation](https://github.com/Infineon/mtb-example-psoc-edge-epc2-tfm-attestation)
 
-**Detailed changes:** See [CODE_CHANGES.md](CODE_CHANGES.md)
-
 ---
 
 ## Learn More
 
 ### Next Tutorial
-📚 **[Part 2: Digital Signatures](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)** - ECDSA signing with hardware-protected keys
+📚 **[Part 2: Digital Signatures](https://github.com/nitikorn20/02-signing)** - ECDSA signing with hardware-protected keys
 
 ### Documentation
 
@@ -339,8 +323,8 @@ This tutorial is based on **Infineon CE240591** with these enhancements:
 **✅ Completed Part 1!** You now understand hardware-rooted device identity.
 
 **Continue learning:**
-- [**Part 2: Digital Signatures →**](https://github.com/nitikorn20/psoc-edge-optiga-02-signing) - Sign data with OPTIGA keys (45 min)
-- [**Part 3: Secure Channel →**](https://github.com/nitikorn20/psoc-edge-optiga-03-secure-channel) - End-to-end encryption (90 min)
+- [**Part 2: Digital Signatures →**](https://github.com/nitikorn20/02-signing) - Sign data with OPTIGA keys (45 min)
+- [**Part 3: Secure Channel →**](https://github.com/nitikorn20/03-secure-channel) - End-to-end encryption (90 min)
 
 **Explore more:**
 - [**Tutorial Series Hub**](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials)
@@ -372,6 +356,6 @@ Found a bug or have suggestions?
 
 **🔒 Hardware-rooted device identity that cannot be cloned**
 
-**[Tutorial Series →](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials)** | **[Next: Digital Signatures →](https://github.com/nitikorn20/psoc-edge-optiga-02-signing)**
+**[Tutorial Series →](https://github.com/nitikorn20/optiga-tfm-connectivity-tutorials)** | **[Next: Digital Signatures →](https://github.com/nitikorn20/02-signing)**
 
 </div>
